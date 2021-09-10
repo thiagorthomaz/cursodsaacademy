@@ -23,7 +23,6 @@ C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\bin\Debug\net5.0-windows\runtime
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\bin\Debug\net5.0-windows\runtimes\osx-x64\native\libLdaNative.dylib
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\bin\Debug\net5.0-windows\runtimes\win-x64\native\LdaNative.dll
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\bin\Debug\net5.0-windows\runtimes\win-x86\native\LdaNative.dll
-C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.csproj.AssemblyReference.cache
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.Form1.resources
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.csproj.GenerateResource.cache
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.GeneratedMSBuildEditorConfig.editorconfig
@@ -35,3 +34,4 @@ C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.d
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\ref\DSAML.dll
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.pdb
 C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.genruntimeconfig.cache
+C:\Users\thiago.thomaz\source\repos\DSAML\DSAML\obj\Debug\net5.0-windows\DSAML.csproj.AssemblyReference.cache

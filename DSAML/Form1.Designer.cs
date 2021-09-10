@@ -32,13 +32,17 @@ namespace DSAML
             this.treinar = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.RichTextBox();
             this.lbl_sepala_largura = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_sepala_largura = new System.Windows.Forms.TextBox();
+            this.txt_sepala_comprimento = new System.Windows.Forms.TextBox();
             this.lbl_sepala_comprimento = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_petala_largura = new System.Windows.Forms.TextBox();
             this.lbl_petala_largura = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_petala_comprimento = new System.Windows.Forms.TextBox();
             this.lbl_petala_comprimento = new System.Windows.Forms.Label();
+            this.btn_prever = new System.Windows.Forms.Button();
+            this.btn_amostra_setosa = new System.Windows.Forms.Button();
+            this.btn_amostra_versicolor = new System.Windows.Forms.Button();
+            this.btn_amostra_virginica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // treinar
@@ -68,19 +72,19 @@ namespace DSAML
             this.lbl_sepala_largura.TabIndex = 2;
             this.lbl_sepala_largura.Text = "Lárgura Sépala";
             // 
-            // textBox1
+            // txt_sepala_largura
             // 
-            this.textBox1.Location = new System.Drawing.Point(688, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            this.txt_sepala_largura.Location = new System.Drawing.Point(688, 12);
+            this.txt_sepala_largura.Name = "txt_sepala_largura";
+            this.txt_sepala_largura.Size = new System.Drawing.Size(100, 23);
+            this.txt_sepala_largura.TabIndex = 3;
             // 
-            // textBox2
+            // txt_sepala_comprimento
             // 
-            this.textBox2.Location = new System.Drawing.Point(688, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 5;
+            this.txt_sepala_comprimento.Location = new System.Drawing.Point(688, 41);
+            this.txt_sepala_comprimento.Name = "txt_sepala_comprimento";
+            this.txt_sepala_comprimento.Size = new System.Drawing.Size(100, 23);
+            this.txt_sepala_comprimento.TabIndex = 5;
             // 
             // lbl_sepala_comprimento
             // 
@@ -91,12 +95,12 @@ namespace DSAML
             this.lbl_sepala_comprimento.TabIndex = 4;
             this.lbl_sepala_comprimento.Text = "Compr. Sépala";
             // 
-            // textBox3
+            // txt_petala_largura
             // 
-            this.textBox3.Location = new System.Drawing.Point(688, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 7;
+            this.txt_petala_largura.Location = new System.Drawing.Point(688, 70);
+            this.txt_petala_largura.Name = "txt_petala_largura";
+            this.txt_petala_largura.Size = new System.Drawing.Size(100, 23);
+            this.txt_petala_largura.TabIndex = 7;
             // 
             // lbl_petala_largura
             // 
@@ -107,12 +111,12 @@ namespace DSAML
             this.lbl_petala_largura.TabIndex = 6;
             this.lbl_petala_largura.Text = "Lárgura Pétala";
             // 
-            // textBox4
+            // txt_petala_comprimento
             // 
-            this.textBox4.Location = new System.Drawing.Point(688, 99);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 9;
+            this.txt_petala_comprimento.Location = new System.Drawing.Point(688, 99);
+            this.txt_petala_comprimento.Name = "txt_petala_comprimento";
+            this.txt_petala_comprimento.Size = new System.Drawing.Size(100, 23);
+            this.txt_petala_comprimento.TabIndex = 9;
             // 
             // lbl_petala_comprimento
             // 
@@ -123,18 +127,63 @@ namespace DSAML
             this.lbl_petala_comprimento.TabIndex = 8;
             this.lbl_petala_comprimento.Text = "Compr. Pétala";
             // 
+            // btn_prever
+            // 
+            this.btn_prever.Enabled = false;
+            this.btn_prever.Location = new System.Drawing.Point(598, 247);
+            this.btn_prever.Name = "btn_prever";
+            this.btn_prever.Size = new System.Drawing.Size(190, 25);
+            this.btn_prever.TabIndex = 10;
+            this.btn_prever.Text = "Prever";
+            this.btn_prever.UseVisualStyleBackColor = true;
+            this.btn_prever.Click += new System.EventHandler(this.btn_prever_Click);
+            // 
+            // btn_amostra_setosa
+            // 
+            this.btn_amostra_setosa.Location = new System.Drawing.Point(598, 128);
+            this.btn_amostra_setosa.Name = "btn_amostra_setosa";
+            this.btn_amostra_setosa.Size = new System.Drawing.Size(190, 23);
+            this.btn_amostra_setosa.TabIndex = 11;
+            this.btn_amostra_setosa.Text = "Amostra Setosa (Classe 1)";
+            this.btn_amostra_setosa.UseVisualStyleBackColor = true;
+            this.btn_amostra_setosa.Click += new System.EventHandler(this.btn_amostra_setosa_Click);
+            // 
+            // btn_amostra_versicolor
+            // 
+            this.btn_amostra_versicolor.Location = new System.Drawing.Point(598, 158);
+            this.btn_amostra_versicolor.Name = "btn_amostra_versicolor";
+            this.btn_amostra_versicolor.Size = new System.Drawing.Size(190, 23);
+            this.btn_amostra_versicolor.TabIndex = 12;
+            this.btn_amostra_versicolor.Text = "Amostra Versicolor (Classe 2)";
+            this.btn_amostra_versicolor.UseVisualStyleBackColor = true;
+            this.btn_amostra_versicolor.Click += new System.EventHandler(this.btn_amostra_versicolor_Click);
+            // 
+            // btn_amostra_virginica
+            // 
+            this.btn_amostra_virginica.Location = new System.Drawing.Point(598, 188);
+            this.btn_amostra_virginica.Name = "btn_amostra_virginica";
+            this.btn_amostra_virginica.Size = new System.Drawing.Size(190, 23);
+            this.btn_amostra_virginica.TabIndex = 13;
+            this.btn_amostra_virginica.Text = "Amostra Virginica (Classe 3)";
+            this.btn_amostra_virginica.UseVisualStyleBackColor = true;
+            this.btn_amostra_virginica.Click += new System.EventHandler(this.btn_amostra_virginica_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.btn_amostra_virginica);
+            this.Controls.Add(this.btn_amostra_versicolor);
+            this.Controls.Add(this.btn_amostra_setosa);
+            this.Controls.Add(this.btn_prever);
+            this.Controls.Add(this.txt_petala_comprimento);
             this.Controls.Add(this.lbl_petala_comprimento);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_petala_largura);
             this.Controls.Add(this.lbl_petala_largura);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_sepala_comprimento);
             this.Controls.Add(this.lbl_sepala_comprimento);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_sepala_largura);
             this.Controls.Add(this.lbl_sepala_largura);
             this.Controls.Add(this.log);
             this.Controls.Add(this.treinar);
@@ -151,13 +200,17 @@ namespace DSAML
         private System.Windows.Forms.Button treinar;
         private System.Windows.Forms.RichTextBox log;
         private System.Windows.Forms.Label lbl_sepala_largura;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_sepala_largura;
+        private System.Windows.Forms.TextBox txt_sepala_comprimento;
         private System.Windows.Forms.Label lbl_sepala_comprimento;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_petala_largura;
         private System.Windows.Forms.Label lbl_petala_largura;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_petala_comprimento;
         private System.Windows.Forms.Label lbl_petala_comprimento;
+        private System.Windows.Forms.Button btn_prever;
+        private System.Windows.Forms.Button btn_amostra_setosa;
+        private System.Windows.Forms.Button btn_amostra_versicolor;
+        private System.Windows.Forms.Button btn_amostra_virginica;
     }
 }
 
